@@ -1,0 +1,5 @@
+"Model","mtry","nrounds","max_depth","eta","gamma","colsample_bytree","min_child_weight","subsample","k","layer1","layer2","layer3"
+"Random Forest",16,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"XGBoost",NA,800,8,0.1,0,0.8,1,0.8,NA,NA,NA,NA
+"k-NN",NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA
+"MLP-ML",NA,NA,NA,NA,NA,NA,NA,NA,NA,20,10,0
