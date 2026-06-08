@@ -37,9 +37,9 @@ custom_grids <- list(
   ),
   
   xgbTree = expand.grid(
-    nrounds = c(200, 400),
-    max_depth = c(3, 4, 6, 8),
-    eta = c(0.01, 0.05, 0.1),
+    nrounds = c(200, 400, 800),
+    max_depth = c(4, 6, 8),
+    eta = c(0.03, 0.05, 0.1),
     gamma = c(0, 1),
     colsample_bytree = 0.8,
     min_child_weight = c(1, 3),
