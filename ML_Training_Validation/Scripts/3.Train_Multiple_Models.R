@@ -203,7 +203,7 @@ final_metrics$Model <- factor(
 
 final_metrics$Class <- factor(
   final_metrics$Class,
-  levels = c("NT", "SW", "HYPE", "CL", "TO", "IM")
+  levels = c("NB", "HS", "TR", "IM")
 )
 
 write.csv(final_metrics, "C:/Users/User/Desktop/LaNE/Experimentos/ML_NTT/Data/final_model_metrics.csv", row.names = FALSE)
