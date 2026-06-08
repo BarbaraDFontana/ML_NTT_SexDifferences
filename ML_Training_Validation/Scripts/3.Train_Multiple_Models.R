@@ -33,13 +33,13 @@ model_labels <- c("Random Forest", "XGBoost", "k-NN", "MLP-ML")
 custom_grids <- list(
   
   rf = expand.grid(
-    mtry = 10:20
+    mtry = floor(seq(2, sqrt(ncol(df.training.allB)-1)*2, length.out=10))
   ),
   
   xgbTree = expand.grid(
     nrounds = c(200, 400),
-    max_depth = c(4, 6),
-    eta = c(0.05, 0.1),
+    max_depth = c(3, 4, 6, 8),
+    eta = c(0.01, 0.05, 0.1),
     gamma = c(0, 1),
     colsample_bytree = 0.8,
     min_child_weight = c(1, 3),
@@ -47,7 +47,7 @@ custom_grids <- list(
   ),
   
   knn = expand.grid(
-    k = seq(3, 11, 2)
+    k = seq(1,31,2)
   ),
   
   mlpML = expand.grid(
